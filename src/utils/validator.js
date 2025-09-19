@@ -1,6 +1,7 @@
 const { Error } = require('mongoose');
 const validator = require('validator');
 
+
 const validate = (data)=>{
     const mandatoryFields = ['firstName', 'emailId', 'password'];
     const isAllowed = mandatoryFields.every((k) => Object.keys(data).includes(k));
