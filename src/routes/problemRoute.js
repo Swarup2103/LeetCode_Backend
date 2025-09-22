@@ -13,7 +13,7 @@ problemRouter.delete('/delete/:id',adminMiddleware, deleteProblem);
 //with user access
 problemRouter.get('/problemById/:id',userMiddleware, getProblemById);
 problemRouter.get('/getAllProblems',userMiddleware, getAllProblems);
-problemRouter.get('/problemSolvedByuser',userMiddleware, solvedAllProblemsByUser);
+//problemRouter.get('/problemSolvedByuser',userMiddleware, solvedAllProblemsByUser);
  
 
 module.exports = problemRouter;
